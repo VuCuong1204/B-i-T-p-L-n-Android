@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:id="@+id/ctChangePassMain"
+    tools:context=".screen.changepass.ChangePassActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llChangePassMenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibChangePassBack"
+            style="@style/BabyButtonBackRegister"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSaveChange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="#FE8600"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvChangePassTitle"
+        style="@style/BabyTitleRegister"
+        android:text="Change Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llChangePassMenuTop" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCurrentPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_str_white_color_white_selected"
+        app:endIconDrawable="@drawable/custom_eye_pass"
+        app:endIconMode="password_toggle"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChangePassTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieCurrentPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Current password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textColorHint="@color/black_34"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/selector_str_white_color_white_selected"
+        app:endIconDrawable="@drawable/custom_eye_pass"
+        app:endIconMode="password_toggle"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilCurrentPass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="New password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textColorHint="@color/black_34"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilReNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_str_white_color_white_selected"
+        app:endIconDrawable="@drawable/custom_eye_pass"
+        app:endIconMode="password_toggle"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilNewPass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieReNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Re-type new password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textColorHint="@color/black_34"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvChangePassWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF4B4B"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tilReNewPass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

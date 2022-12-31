@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPreviewCancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_cancel" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPreviewOk"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_checkbox" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/BpMarginMedium20"
+        android:layout_centerHorizontal="true"
+        android:text="Preview" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPreviewBaby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivPreviewCancel" />
+</RelativeLayout>

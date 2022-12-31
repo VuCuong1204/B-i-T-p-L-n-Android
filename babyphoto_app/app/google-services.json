@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821882730354",
+    "project_id": "baby-photo-fb591",
+    "storage_bucket": "baby-photo-fb591.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821882730354:android:205e12cd48bc8925898feb",
+        "android_client_info": {
+          "package_name": "ai.ftech.babyphoto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821882730354-svm6tliiqm7mkgl2j1g80cf29vsabui0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg9EudINuUpHwuBvkA5-Zzx5CVfshmEzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821882730354-svm6tliiqm7mkgl2j1g80cf29vsabui0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

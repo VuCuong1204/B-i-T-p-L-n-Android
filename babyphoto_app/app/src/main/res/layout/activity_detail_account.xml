@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailAcccountMain"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".screen.detailaccount.DetailAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/llAccountDetailHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibAccountDetailBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/ic_ad_account_24px" />
+
+        <TextView
+            android:id="@+id/tvAccountDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Account"
+            android:textColor="@color/black_87"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAccountDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#1D000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAccountDetailHeader">
+
+        <TextView
+            android:id="@+id/tvYourDetailAccountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginHorizontal="18dp"
+            android:paddingTop="6dp"
+            android:text="Your details"
+            android:textColor="@color/black_34"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAccountDetailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAccountDetail1">
+
+        <FrameLayout
+            android:id="@+id/flAvatarAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:src="@drawable/humo" />
+
+            <ImageButton
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_add_avatar_account_detail_24px" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvAccountDetailFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="First name: "
+                android:textColor="@color/black_56"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtAccountDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:gravity="start|center"
+                    android:text="Mami"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ibAccountDetailFName"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="end|center"
+                    android:background="@drawable/ic_account_detail_edit_24px" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_account_24px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/tvAccountDetailLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Last name: "
+                android:textColor="@color/black_56"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtAccountDetailNameLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:gravity="start|center"
+                    android:text="Thuy"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ibAccountDetailLName"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="end|center"
+                    android:background="@drawable/ic_account_detail_edit_24px" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_account_24px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/tvIDAccountDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="ID: "
+                android:textColor="@color/black_56"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvViewIDAccountDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="start|center"
+                    android:text="03216416496846164"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCoppyIDAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:text="Copy"
+                    android:textColor="#0047FE"
+                    android:textSize="13sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_account_24px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/tvEmailAccountDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Email : "
+                android:textColor="@color/black_56"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtViewEmailAccountDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:gravity="start|center"
+                    android:text="thuysolomo@gmail.com"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/ibAccountDetailEmail"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="end|center"
+                    android:background="@drawable/ic_account_detail_edit_24px" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectangle_account_24px" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProfileChangePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Change password"
+                android:textColor="#0047FE"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAccountDetail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1D000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAccountDetailInfo">
+
+        <TextView
+            android:id="@+id/tvAccountDetailYourAc"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginHorizontal="18dp"
+            android:paddingTop="6dp"
+            android:text="Your account"
+            android:textColor="@color/black_34"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llAccountDetailSaveChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAccountDetail2">
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/ic_save_change_profile" />
+
+        <TextView
+            android:id="@+id/tvChangeAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change account"
+            android:textColor="@color/black_87"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAccountDetailLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAccountDetailSaveChange">
+
+        <ImageButton
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/ic_logout_account_detail24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Log out"
+            android:textColor="#FF4B4B"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

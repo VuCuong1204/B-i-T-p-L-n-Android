@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/shape_white_bg_corner_10">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDialogCreateTitle"
+        style="@style/BpStyleText20Medium"
+        android:text="@string/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDialogCreateMessage"
+        style="@style/BpStyleText15Regular"
+        android:layout_marginTop="5dp"
+        android:text="Changes really won't be saved"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogCreateTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogBacKCancel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+
+        android:background="@drawable/shape_white_bg_gray_stroke_2_corner_10"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btnDialogBacKOk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogCreateMessage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogBacKOk"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="@string/Ok"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/shape_pink_bg_corner_10"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDialogBacKCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDialogBacKCancel"
+        app:layout_constraintTop_toTopOf="@+id/btnDialogBacKCancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

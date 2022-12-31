@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.createalbum.preview.PhotoFolderActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPhotoFolderCancel"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/BpStyleText20Medium"
+        android:text="Album"
+        app:layout_constraintBottom_toBottomOf="@id/ivPhotoFolderCancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivPhotoFolderCancel" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPhotoFolderCamera"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:background="@drawable/ic_camera"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivPhotoFolderCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivPhotoFolderCancel" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPhotoFolderImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPhotoFolderCancel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

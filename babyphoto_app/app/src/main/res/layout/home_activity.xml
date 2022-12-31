@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.home.HomeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHomeMenu"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHomeComp"
+        android:layout_width="300dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_comp11_24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHomeMenu" />
+
+    <FrameLayout
+        android:id="@+id/flHomeAddBaby"
+        style="@style/BabyPhotoStyleText"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHomeComp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add_baby_24px" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_add_baby1_24px" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHomeAddBaby1"
+        style="@style/BpStyleText15MediumNoColor"
+        android:layout_marginTop="5dp"
+        android:text="@string/add_baby"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flHomeAddBaby" />
+
+    <FrameLayout
+        android:id="@+id/flHomeJoinAlbum"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_add_baby_24px"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHomeAddBaby1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="23dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_join_album" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvHomeJoinBaby"
+        style="@style/BpStyleText15MediumNoColor"
+        android:layout_marginTop="5dp"
+        android:text="@string/join_album"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flHomeJoinAlbum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

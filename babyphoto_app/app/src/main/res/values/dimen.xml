@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bp_dimen_10">10.00dp</dimen>
+    <dimen name="bp_dimen_20">20.00dp</dimen>
+    <dimen name="bp_dimen_30">30.00dp</dimen>
+    <dimen name="bp_dimen_40">40.00dp</dimen>
+    <dimen name="bp_dimen_50">50.00dp</dimen>
+    <dimen name="bp_dimen_60">60.00dp</dimen>
+    <dimen name="bp_dimen_70">70.00dp</dimen>
+    <dimen name="bp_dimen_80">80.00dp</dimen>
+    <dimen name="bp_dimen_90">90.00dp</dimen>
+    <dimen name="bp_dimen_100">100.00dp</dimen>
+    <dimen name="bp_dimen_110">110.00dp</dimen>
+    <dimen name="bp_dimen_120">120.00dp</dimen>
+    <dimen name="bp_dimen_130">130.00dp</dimen>
+    <dimen name="bp_dimen_140">140.00dp</dimen>
+
+
+    <dimen name="bp_text_size_2">2.00sp</dimen>
+    <dimen name="bp_text_size_4">4.00sp</dimen>
+    <dimen name="bp_text_size_6">6.00sp</dimen>
+    <dimen name="bp_text_size_8">8.00sp</dimen>
+    <dimen name="bp_text_size_10">10.00sp</dimen>
+    <dimen name="bp_text_size_15">15.00sp</dimen>
+    <dimen name="bp_text_size_20">20.00sp</dimen>
+    <dimen name="bp_text_size_25">25.00sp</dimen>
+    <dimen name="bp_text_size_30">30.00sp</dimen>
+    <dimen name="bp_text_size_35">35.00sp</dimen>
+    <dimen name="bp_text_size_40">40.00sp</dimen>
+
+    <dimen name="bp_margin_2">2.00sp</dimen>
+    <dimen name="bp_margin_4">4.00sp</dimen>
+    <dimen name="bp_margin_6">6.00sp</dimen>
+    <dimen name="bp_margin_8">8.00sp</dimen>
+    <dimen name="bp_margin_15">15.00sp</dimen>
+    <dimen name="bp_margin_20">20.00sp</dimen>
+    <dimen name="bp_margin_25">25.00sp</dimen>
+
+    <dimen name="bp_padding_10">10.00dp</dimen>
+    <dimen name="bp_padding_20">20.00dp</dimen>
+
+    <dimen name="bp_corner_2">2dp</dimen>
+    <dimen name="bp_corner_4">4dp</dimen>
+    <dimen name="bp_corner_6">6dp</dimen>
+    <dimen name="bp_corner_8">8dp</dimen>
+    <dimen name="bp_corner_10">10dp</dimen>
+    <dimen name="bp_corner_12">12dp</dimen>
+    <dimen name="bp_corner_14">14dp</dimen>
+    <dimen name="bp_corner_16">16dp</dimen>
+    <dimen name="bp_corner_20">20dp</dimen>
+
+</resources>
