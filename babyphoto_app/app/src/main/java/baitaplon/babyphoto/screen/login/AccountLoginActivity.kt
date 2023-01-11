@@ -50,10 +50,6 @@ class AccountLoginActivity : AppCompatActivity(), CompoundButton.OnCheckedChange
             startActivity(intent)
         }
 
-        tvAccountLoginTakePass.setOnClickListener {
-            showBottomSheet()
-        }
-
         acbAccountLogin.setOnClickListener {
             if (enableLogin) {
                 val email = tieAccountLoginEmail.text.toString()
@@ -188,19 +184,6 @@ class AccountLoginActivity : AppCompatActivity(), CompoundButton.OnCheckedChange
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
-    private fun showBottomSheet(): Dialog {
-        val dialog = Dialog(this)
-        dialog.setContentView(R.layout.password_recovery_bottomsheet_layout)
-        dialog.window?.setLayout(
-            ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT
-        )
-        dialog.setCancelable(false)
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog.show()
-        dialog.window?.setGravity(Gravity.BOTTOM)
-        return dialog
-    }
 
     override fun onBackPressed() {
         val intent = Intent(this, MainActivity::class.java)
