@@ -17,10 +17,10 @@ class TimelineAdapter(
 
 
     var dataImage: MutableList<Image> = mutableListOf()
-    set(value) {
-        field = value
-        notifyDataSetChanged()
-    }
+        set(value) {
+            field = value
+            notifyDataSetChanged()
+        }
     var callBack: ICallBack? = null
     // tạo view hiển thị cho từng item
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

@@ -5,4 +5,4 @@ data class BabyHomeModel (
     var nameBaby: String,
     var countItem: String,
     var quality: String
-    )
+)
