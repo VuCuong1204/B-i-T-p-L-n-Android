@@ -74,6 +74,7 @@ class PhotoFolderActivity : AppCompatActivity(), DialogPreviewFragment.IPreviewU
         finish()
     }
 
+    // thuc hiện chuyển sang camera hoặc thư viện , nếu đã check quyền
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,

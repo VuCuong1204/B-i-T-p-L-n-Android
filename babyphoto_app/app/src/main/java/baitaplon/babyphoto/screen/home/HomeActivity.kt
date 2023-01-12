@@ -12,23 +12,17 @@ import android.view.Window
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import baitaplon.babyphoto.R
 import baitaplon.babyphoto.data.Constant
 import baitaplon.babyphoto.data.model.AlbumBaby
 import baitaplon.babyphoto.screen.timeline.TimelineActivity
-import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity(), BabyHomeAdapter.onItemClickListenerr, IHomeContract.View {
     @SuppressLint("WrongViewCast", "NotifyDataSetChanged")
     private lateinit var presenter: HomePresenter
-    lateinit var toggle: ActionBarDrawerToggle
-    lateinit var drawerLayout: DrawerLayout
-    lateinit var navigationView: NavigationView
     private var mutableListBaby: MutableList<AlbumBaby> = mutableListOf()
 
     //callback result
@@ -47,8 +41,6 @@ class HomeActivity : AppCompatActivity(), BabyHomeAdapter.onItemClickListenerr, 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         presenter = HomePresenter(this)
-        drawerLayout = findViewById(R.id.drawableLayout)
-        navigationView = findViewById(R.id.nvHomeToDetailAccount)
 
         val adapter =
             BabyHomeAdapter(this@HomeActivity, mutableListBaby, R.drawable.ic_add_home_24px)
@@ -56,7 +48,6 @@ class HomeActivity : AppCompatActivity(), BabyHomeAdapter.onItemClickListenerr, 
         rcvHomeViewBaby.adapter = adapter
         val manager = GridLayoutManager(this@HomeActivity, 2, GridLayoutManager.VERTICAL, false)
         rcvHomeViewBaby.layoutManager = manager
-
 
         srlHome.isRefreshing = true
         presenter.getAlbum(Constant.account.idaccount)
