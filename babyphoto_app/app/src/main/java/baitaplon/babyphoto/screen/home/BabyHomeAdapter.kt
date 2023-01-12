@@ -37,17 +37,17 @@ class BabyHomeAdapter(
 
     //create item
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        if (viewType == viewTypeAdd) {
+        return if (viewType == viewTypeAdd) {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.home_add_baby_layout, parent, false)
-            return ViewTitle(view)
+            ViewTitle(view)
         } else {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.home_view_baby_layout, parent, false)
             view.setOnClickListener {
 
             }
-            return ViewHolder(view)
+            ViewHolder(view)
         }
     }
 

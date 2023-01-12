@@ -136,27 +136,11 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="15dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ViewFlipper
-                        android:id="@+id/vlHomeSlide"
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:layout_centerHorizontal="true" />
-
-                    <ImageButton
-                        android:id="@+id/ibCancelAds"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="375dp"
-                        android:background="@drawable/ic_baseline_cancel2_24" />
-                </RelativeLayout>
             </androidx.cardview.widget.CardView>
-        </RelativeLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nvHomeToDetailAccount"

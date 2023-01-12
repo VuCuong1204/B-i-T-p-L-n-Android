@@ -41,6 +41,7 @@
             android:background="@drawable/ic_menu_timeline_24px"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -74,13 +75,14 @@
                 android:textColor="@color/black_87"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/llTimelineMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:orientation="vertical">
 
             <TextView
@@ -99,6 +101,7 @@
                 android:textColor="@color/black_87"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -124,7 +127,9 @@
                 android:textColor="@color/black_87"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -157,30 +162,31 @@
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <TextView
                     android:id="@+id/tvTimeLineItemDateStart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="February 17, 2019"
                     android:textColor="@color/black_87"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
+
                 <TextView
-                    android:id="@+id/tvTimeLineItemDatee"
+                    android:id="@+id/tvTimeLineItemDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" - "
                     android:textColor="@color/black_87"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/tvTimeLineItemDateEnd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="February 17, 2020"
                     android:textColor="@color/black_87"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="12sp" />
+
             </LinearLayout>
 
             <ImageButton
@@ -189,26 +195,28 @@
                 android:background="@drawable/ic_account_detail_edit_24px"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </LinearLayout>
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srlTimeLine"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bnTimeLineBottom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llItemTimeLineTitle">
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTimelineViewImage"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginStart="4dp"
-            android:scrollbars="vertical"
             android:background="#12000000"
+            android:scrollbars="vertical"
             app:layout_constraintBottom_toTopOf="@+id/bnTimeLineBottom"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/llItemTimeLineTitle"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/llItemTimeLineTitle" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
@@ -216,25 +224,13 @@
         android:id="@+id/fabTimeLineAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="@dimen/bp_dimen_20"
+        android:layout_marginBottom="30dp"
         android:elevation="20dp"
         android:src="@drawable/ic_baseline_add_24"
         app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/bnTimeLineBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/orange" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bnTimeLineBottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
-        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
-        app:menu="@menu/bottom_navigation_menu"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>
